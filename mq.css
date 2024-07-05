@@ -101,4 +101,95 @@
       text-align: justify;
     }
   }
+
+  /*Adjusting for mobile*/
+  /* For screens smaller than 600px */
+@media screen and (max-width: 600px) {
+  #skills {
+    padding: 50px 10px; /* Reduce padding */
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8); /* Adjust background opacity */
+    border: 1px solid rgba(255, 255, 255, 0.8); /* Adjust border opacity */
+  }
+
+  .skills-container {
+    flex-direction: column; /* Stack skills vertically */
+    gap: 20px; /* Add spacing between skills */
+  }
+
+  .skill {
+    width: 80%; /* Adjust skill width */
+    margin: 0 auto; /* Center skills */
+  }
+
+  .skill-icon {
+    width: 80px; /* Adjust icon size */
+    height: 80px;
+  }
+
+  .skill h3 {
+    font-size: 1rem; /* Adjust font size */
+  }
+}
+
+/* For screens between 600px and 1200px */
+@media screen and (min-width: 600px) and (max-width: 1200px) {
+  #skills {
+    padding: 70px 20px; /* Adjust padding */
+    text-align: center;
+    background: rgba(255, 255, 255, 0.7); /* Adjust background opacity */
+    border: 1px solid rgba(255, 255, 255, 0.7); /* Adjust border opacity */
+  }
+
+  .skills-container {
+    flex-direction: row; /* Stack skills in a row */
+    flex-wrap: wrap; /* Allow wrapping */
+    gap: 30px; /* Add spacing between skills */
+  }
+
+  .skill {
+    width: 40%; /* Adjust skill width */
+    margin: 0 auto; /* Center skills */
+  }
+
+  .skill-icon {
+    width: 90px; /* Adjust icon size */
+    height: 90px;
+  }
+
+  .skill h3 {
+    font-size: 1.1rem; /* Adjust font size */
+  }
+}
+
+/* For screens larger than 1200px */
+@media screen and (min-width: 1200px) {
+  #skills {
+    padding: 100px 0; /* Default padding */
+    text-align: center;
+    background: rgba(255, 255, 255, 0.5); /* Default background opacity */
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Default border opacity */
+  }
+
+  .skills-container {
+    flex-direction: row; /* Default direction */
+    flex-wrap: wrap; /* Allow wrapping */
+    gap: 40px; /* Default spacing between skills */
+  }
+
+  .skill {
+    width: 25%; /* Default skill width */
+    margin: 0 auto; /* Center skills */
+  }
+
+  .skill-icon {
+    width: 100px; /* Default icon size */
+    height: 100px;
+  }
+
+  .skill h3 {
+    font-size: 1.2rem; /* Default font size */
+  }
+}
+
   
